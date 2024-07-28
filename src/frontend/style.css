@@ -1,0 +1,73 @@
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    font-family: "Rubik", sans-serif;
+}
+.gallery {
+    margin: 10px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 180px;
+  }
+  
+  .gallery:hover {
+    border: 2px solid #ff0000;
+    cursor: pointer;
+  }
+  
+img {
+    width: 10%;
+    height: 10%;
+  }
+  button {
+	appearance: none;
+	border: .2em solid #E91E63;
+	background: hsl(0 0 0/0);
+	padding: .85em 1.5em;
+	color: #E91E63;
+	border-radius: 2em;
+	transition: 1s;
+	&:hover, &:focus, &:active {
+		background: #E91E63;
+		color: #fff;
+	}
+}
+  input[type=file] { display: none; }
+  label[for=img-upload] {
+      display: grid;
+      grid-auto-flow: column;
+      grid-gap: .5em;
+      justify-items: center;
+      align-content: center;
+      color: #E91E63;
+      border: .2em solid #E91E63;
+      background: hsl(0 0 0/0);
+      padding: .85em 1.5em;
+      color: #E91E63;
+      border-radius: 2em;
+      transition: 1s;
+      &:hover, &:focus, &:active {
+          background: #E91E63;
+          color: #fff;
+      }
+  }
+  input[type=number] {
+	width: 3em;
+	padding: 0.5em;
+	border: .2em solid #E91E63;
+	border-radius: 1em;
+	text-align: center;
+	color: #E91E63;
+	appearance: textfield;
+	margin: 10px    ;
+	&::-webkit-inner-spin-button {
+		opacity: 1;
+		background: red;
+	}
+}
+.selected {
+  border: 2px solid #ff0000;
+}
